@@ -31,11 +31,11 @@
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Projects</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Clients</a>
+                <a class="nav-link" href="#clients">Clients</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./about.html">About</a>
@@ -64,7 +64,7 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <p class="section-title">Projects</p>
           <div class="projects-card hdfc wow fadeInUp">
@@ -101,12 +101,12 @@
           </div>
           <div class="projects-card yubi wow fadeInUp">
             <div class="row align-items-end">
-              <div class="col-md-7">
+              <div class="col-md-6">
                 <div class="projects-card-image">
                   <img class="img-fluid imgShadow" src="./images/yubi-card-image.png" alt="">
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-5 offset-md-1">
                 <div class="projects-card-detail">
                   <h2 class="projects-card-title">Yubi (Co.lend)</h2>
                   <p class="projects-card-desc">Enabling lenders to collaborate with multiple partners and disburse joint loans</p>
@@ -152,7 +152,7 @@
               <div class="other-card mint wow fadeInRight">
                 <div class="left">
                   <div class="other-card-title">Smart City</div>
-                  <a href="#" class="custom-btn">View Case Study</a>
+                  <a href="./smart.html" class="custom-btn">View Case Study</a>
                 </div>
                 <div class="right">
                   <img class="img-fluid imgShadow" src="./images/smart-city-card-image.png" alt="">
@@ -163,7 +163,7 @@
               <div class="other-card badger wow fadeInLeft">
                 <div class="left">
                   <div class="other-card-title">Industrial Badger App</div>
-                  <a href="#" class="custom-btn">View Case Study</a>
+                  <a href="./badger.html" class="custom-btn">View Case Study</a>
                 </div>
                 <div class="right">
                   <img class="img-fluid" src="./images/badger-card-image.png" alt="">
@@ -174,7 +174,7 @@
               <div class="other-card nlb wow fadeInRight">
                 <div class="left">
                   <div class="other-card-title">NLB Singapore</div>
-                  <a href="#" class="custom-btn yubi">View Case Study</a>
+                  <a href="./nlb.html" class="custom-btn yubi">View Case Study</a>
                 </div>
                 <div class="right">
                   <img class="img-fluid imgShadow" src="./images/nlb-card-image.png" alt="">
@@ -184,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="clients">
+      <section class="clients" id="clients">
         <div class="container">
           <h2 class="section-title mb-0">Clients Served</h2>
           <p class="section-desc">5 years of forming strong client connections</p>
@@ -292,6 +292,7 @@
     </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       $(document).ready(function () {

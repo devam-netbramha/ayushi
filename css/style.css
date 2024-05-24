@@ -1,4 +1,11 @@
 @import url("./animate.css");
+<<<<<<< Updated upstream
+=======
+html {
+  scroll-behavior: smooth;
+}
+
+>>>>>>> Stashed changes
 body {
   font-family: "Lato";
   background-color: #d9d9d9;
@@ -22,7 +29,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 43px;
-  color: #555;
+  color: #595E61;
   margin: 16px 0 32px;
 }
 @media (max-width: 768px) {
@@ -90,7 +97,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #555;
+  color: #595E61;
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
@@ -192,7 +199,7 @@ body {
   font-weight: 400;
   line-height: 36px;
   margin-bottom: 24px;
-  color: #fff;
+  color: #E8E8E8;
   max-width: 345px;
 }
 @media (max-width: 768px) {
@@ -313,6 +320,15 @@ footer {
   padding-left: 16px;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: all 0.5s ease-in;
+}
+
 .navbar {
   background: rgba(217, 217, 217, 0.5);
   -webkit-backdrop-filter: blur(16px);
@@ -397,7 +413,7 @@ footer {
 .about-desc {
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 40px;
   color: #2d2d2d;
 }
 @media (max-width: 768px) {
