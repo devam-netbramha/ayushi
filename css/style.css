@@ -1,11 +1,8 @@
 @import url("./animate.css");
-<<<<<<< Updated upstream
-=======
 html {
   scroll-behavior: smooth;
 }
 
->>>>>>> Stashed changes
 body {
   font-family: "Lato";
   background-color: #d9d9d9;
