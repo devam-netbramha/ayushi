@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Lato';
   background-color: #d9d9d9;
 }
@@ -27,7 +28,7 @@ body {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 43px;
+    line-height: 150%;
     color: #595E61;
     margin: 16px 0 32px;
 
@@ -81,7 +82,7 @@ body {
 
   h1 {
     font-size: 56px;
-    line-height: 72px;
+    line-height: 150%;
     font-weight: 700;
     color: #1E1F23;
     margin-bottom: 32px;
@@ -96,7 +97,7 @@ body {
   .desc {
     font-size: 24px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 150%;
     color: #595E61;
     margin-bottom: 0;
 
@@ -121,7 +122,7 @@ body {
 }
 
 .hdfc {
-  background: radial-gradient(420.29% 61.96% at 10.69% 76.37%, rgba(105, 113, 162, 0.90) 0%, rgba(62, 70, 116, 0.90) 100%);
+  background: rgba(62, 70, 116, 0.90);
 
   .custom-btn {
     background: rgba(203, 206, 234, 0.50);
@@ -129,7 +130,7 @@ body {
 }
 
 .canam {
-  background: radial-gradient(308.57% 45.48% at 75.9% 84.14%, #686B6D 0%, #41464B 100%);
+  background: #41464B;
 
   .custom-btn {
     background: #6D7276;
@@ -137,7 +138,7 @@ body {
 }
 
 .yubi {
-  background: radial-gradient(370.28% 53.75% at 27.18% 63.97%, #9296C2 0%, #636AAA 100%);
+  background: #636AAA;
 
   .custom-btn {
     background: rgba(203, 206, 234, 0.50);
@@ -145,7 +146,7 @@ body {
 }
 
 .mint {
-  background: radial-gradient(393.47% 57.38% at 77.59% 66.18%, #C6A681 0%, #A67F51 100%);
+  background: #A67F51;
 
   .custom-btn {
     background: rgba(223, 192, 163, 0.70);
@@ -153,7 +154,7 @@ body {
 }
 
 .badger {
-  background: radial-gradient(301.87% 51.4% at 77.96% 76.96%, #C97B7D 0%, #C5595C 100%);
+  background: #C5595C;
 
   .custom-btn {
     background: rgba(225, 168, 170, 0.70);
@@ -161,7 +162,7 @@ body {
 }
 
 .nlb {
-  background: radial-gradient(266.52% 44.44% at 77.53% 71.99%, #7BA0C3 0%, #44729E 100%);
+  background: #44729E;
 
   .custom-btn {
     background: rgba(203, 206, 234, 0.50);
@@ -189,7 +190,7 @@ body {
     font-family: Lato;
     font-size: 40px;
     font-weight: 900;
-    line-height: 43px;
+    line-height: 150%;
     margin-bottom: 16px;
 
     @media(max-width: 768px) {
@@ -202,7 +203,7 @@ body {
   &-desc {
     font-size: 24px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 150%;
     margin-bottom: 24px;
     color: #E8E8E8;
     max-width: 345px;
@@ -260,7 +261,7 @@ body {
     color: #fff;
     font-size: 24px;
     font-weight: 700;
-    line-height: 43px;
+    line-height: 150%;
     margin-bottom: 16px;
   }
 
@@ -331,6 +332,65 @@ footer {
 
     span {
       padding-left: 16px;
+    }
+  }
+}
+
+.collabrators {
+  &-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .left {
+      width: 75px;
+      height: 75px;
+      border-radius: 100%;
+
+      @media(max-width: 768px) {
+        width: 54px;
+        height: 54px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .right {
+      padding-left: 20px;
+
+      @media(max-width: 768px) {
+        padding-left: 12px;
+      }
+
+      .name {
+        color: #2D2D2D;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        margin-bottom: 8px;
+
+        @media(max-width: 768px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      .designation {
+        color: #444;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 0;
+
+        @media(max-width: 768px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
     }
   }
 }
@@ -436,7 +496,7 @@ header {
   &-desc {
     font-size: 24px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 150%;
     color: #2d2d2d;
 
     @media(max-width: 768px) {
@@ -466,7 +526,7 @@ header {
       color: #1E1F23;
       font-size: 56px;
       font-weight: 800;
-      line-height: 72px;
+      line-height: 150%;
       margin-bottom: 24px;
 
       @media(max-width: 768px) {
@@ -480,7 +540,7 @@ header {
       color: #555;
       font-size: 24px;
       font-weight: 400;
-      line-height: 36px;
+      line-height: 150%;
       margin-bottom: 42px;
 
       @media(max-width: 768px) {
@@ -511,7 +571,7 @@ header {
     &-summary {
       font-size: 24px;
       font-weight: 400;
-      line-height: 36px;
+      line-height: 150%;
       color: #2d2d2d;
       max-width: 572px;
 
@@ -535,7 +595,7 @@ header {
         color: #737373;
         font-size: 18px;
         font-weight: 400;
-        line-height: 36px;
+        line-height: 150%;
         text-transform: uppercase;
         margin-bottom: 2px;
 
@@ -549,7 +609,7 @@ header {
         color: #2d2d2d;
         font-size: 22px;
         font-weight: 600;
-        line-height: 36px;
+        line-height: 150%;
 
         @media(max-width: 768px) {
           font-size: 16px;
@@ -571,7 +631,7 @@ header {
       color: #2d2d2d;
       font-size: 24px;
       font-weight: 400;
-      line-height: 36px;
+      line-height: 150%;
       margin-bottom: 12px;
 
       @media(max-width: 768px) {
@@ -585,7 +645,7 @@ header {
         color: #2d2d2d;
         font-size: 24px;
         font-weight: 400;
-        line-height: 36px;
+        line-height: 150%;
 
         @media(max-width: 768px) {
           font-size: 18px;
@@ -593,5 +653,28 @@ header {
         }
       }
     }
+  }
+}
+
+.play-cta {
+  color: #0E2391;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+
+  @media(max-width: 768px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  svg {
+    @media(max-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  span {
+    text-decoration-line: underline;
   }
 }

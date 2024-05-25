@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Lato";
   background-color: #d9d9d9;
 }
@@ -25,7 +26,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 43px;
+  line-height: 150%;
   color: #595E61;
   margin: 16px 0 32px;
 }
@@ -78,7 +79,7 @@ body {
 }
 .banner h1 {
   font-size: 56px;
-  line-height: 72px;
+  line-height: 150%;
   font-weight: 700;
   color: #1E1F23;
   margin-bottom: 32px;
@@ -93,7 +94,7 @@ body {
 .banner .desc {
   font-size: 24px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 150%;
   color: #595E61;
   margin-bottom: 0;
 }
@@ -118,42 +119,42 @@ body {
 }
 
 .hdfc {
-  background: radial-gradient(420.29% 61.96% at 10.69% 76.37%, rgba(105, 113, 162, 0.9) 0%, rgba(62, 70, 116, 0.9) 100%);
+  background: rgba(62, 70, 116, 0.9);
 }
 .hdfc .custom-btn {
   background: rgba(203, 206, 234, 0.5);
 }
 
 .canam {
-  background: radial-gradient(308.57% 45.48% at 75.9% 84.14%, #686B6D 0%, #41464B 100%);
+  background: #41464B;
 }
 .canam .custom-btn {
   background: #6D7276;
 }
 
 .yubi {
-  background: radial-gradient(370.28% 53.75% at 27.18% 63.97%, #9296C2 0%, #636AAA 100%);
+  background: #636AAA;
 }
 .yubi .custom-btn {
   background: rgba(203, 206, 234, 0.5);
 }
 
 .mint {
-  background: radial-gradient(393.47% 57.38% at 77.59% 66.18%, #C6A681 0%, #A67F51 100%);
+  background: #A67F51;
 }
 .mint .custom-btn {
   background: rgba(223, 192, 163, 0.7);
 }
 
 .badger {
-  background: radial-gradient(301.87% 51.4% at 77.96% 76.96%, #C97B7D 0%, #C5595C 100%);
+  background: #C5595C;
 }
 .badger .custom-btn {
   background: rgba(225, 168, 170, 0.7);
 }
 
 .nlb {
-  background: radial-gradient(266.52% 44.44% at 77.53% 71.99%, #7BA0C3 0%, #44729E 100%);
+  background: #44729E;
 }
 .nlb .custom-btn {
   background: rgba(203, 206, 234, 0.5);
@@ -181,7 +182,7 @@ body {
   font-family: Lato;
   font-size: 40px;
   font-weight: 900;
-  line-height: 43px;
+  line-height: 150%;
   margin-bottom: 16px;
 }
 @media (max-width: 768px) {
@@ -194,7 +195,7 @@ body {
 .projects-card-desc {
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
   margin-bottom: 24px;
   color: #E8E8E8;
   max-width: 345px;
@@ -248,7 +249,7 @@ body {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  line-height: 43px;
+  line-height: 150%;
   margin-bottom: 16px;
 }
 .other-card .left {
@@ -315,6 +316,63 @@ footer {
 }
 .footer-link span {
   padding-left: 16px;
+}
+
+.collabrators-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.collabrators-list .left {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .collabrators-list .left {
+    width: 54px;
+    height: 54px;
+  }
+}
+.collabrators-list .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.collabrators-list .right {
+  padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .collabrators-list .right {
+    padding-left: 12px;
+  }
+}
+.collabrators-list .right .name {
+  color: #2D2D2D;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .collabrators-list .right .name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.collabrators-list .right .designation {
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .collabrators-list .right .designation {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 header {
@@ -410,7 +468,7 @@ header {
 .about-desc {
   font-size: 24px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 150%;
   color: #2d2d2d;
 }
 @media (max-width: 768px) {
@@ -439,7 +497,7 @@ header {
   color: #1E1F23;
   font-size: 56px;
   font-weight: 800;
-  line-height: 72px;
+  line-height: 150%;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
@@ -453,7 +511,7 @@ header {
   color: #555;
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
   margin-bottom: 42px;
 }
 @media (max-width: 768px) {
@@ -484,7 +542,7 @@ header {
 .case-banner-summary {
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
   color: #2d2d2d;
   max-width: 572px;
 }
@@ -507,7 +565,7 @@ header {
   color: #737373;
   font-size: 18px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
@@ -521,7 +579,7 @@ header {
   color: #2d2d2d;
   font-size: 22px;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   .case-banner-item .desc {
@@ -542,7 +600,7 @@ header {
   color: #2d2d2d;
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
   margin-bottom: 12px;
 }
 @media (max-width: 768px) {
@@ -555,11 +613,33 @@ header {
   color: #2d2d2d;
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 150%;
 }
 @media (max-width: 768px) {
   .case-details ul li {
     font-size: 18px;
     line-height: 22px;
   }
+}
+
+.play-cta {
+  color: #0E2391;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+@media (max-width: 768px) {
+  .play-cta {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .play-cta svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.play-cta span {
+  text-decoration-line: underline;
 }/*# sourceMappingURL=style.css.map */

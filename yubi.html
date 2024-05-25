@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Brooklyn | Portfolio</title>
+    <title>Yubi (Co.lend) | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,25 +51,25 @@
     <main>
       <section class="case-banner">
         <div class="container">
-          <h1 class="case-banner-title">The Brooklyn Hospital</h1>
-          <p class="case-banner-desc">AI Driven ICU Patient Management System</p>
+          <h1 class="case-banner-title">Yubi (Co.lend)</h1>
+          <p class="case-banner-desc">Enabling lenders to discover, go-live, and collaborate with multiple partners and disburse joint loans</p>
           <div class="case-banner-image yubi">
-            <img class="img-fluid" src="./images/brooklyn-case-banner.png" alt="">
+            <img class="img-fluid" src="./images/yubi-banner.png" alt="">
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <p class="case-banner-summary">A proprietary Intelligent ICU Patient Management System developed in collaboration with one of the largest hospitals in New York. </p>
-              <p class="case-banner-summary">This platform reduces: Mortality rates of patients, Key medical personnel attention & cost to monitor ICU patients.</p>
+              <p class="case-banner-summary">Yubi Co.lend is a collaborative system where banks and non-banking financial companies (NBFCs) work together to provide loans to MSMEs.</p>
+              <p class="case-banner-summary">It involves joint loan disbursement, efficient operations, and secure monitoring, all facilitated through a one-time API integration between the originators and lenders.</p>
             </div>
             <div class="col-lg-6">
               <div class="row">
                 <div class="case-banner-item">
                   <p class="title">Team Members</p>
-                  <p class="desc">01</p>
+                  <p class="desc">02</p>
                 </div>
                 <div class="case-banner-item">
                   <p class="title">Time</p>
-                  <p class="desc">05 Months</p>
+                  <p class="desc">01 Year</p>
                 </div>
                 <div class="case-banner-item">
                   <p class="title">Role</p>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="case-banner-item">
                   <p class="title">Location</p>
-                  <p class="desc">Hyderabad</p>
+                  <p class="desc">Remote + Bangalore</p>
                 </div>
               </div>
             </div>
@@ -86,73 +86,92 @@
       </section>
       <section class="case-details">
         <div class="container">
-          <h2 class="section-title">Challenge</h2>
-          <p class="case-details-para">464 beds community hospital in Downtown Brooklyn, New york witnessed high number of critical patients that needed to be attended in the Intensive Critical Unit (ICU) wards. </p>
-          <p class="case-details-para">With the high number of patients came high number of unforseen code blue situations. Subsequently problems were faced in terms of medical availabilities like disposables, IVs, expert doctors on the shift.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="section-title">Understanding Co-lending Model</h2>
+              <p class="case-details-para">Co-lending is when both, banks and NBFCs work together to provide a loan.</p>
+              <p class="case-details-para">Picture it like a team effort: the bank and the NBFC join forces to share the risk and rewards of lending money. The bank (Investor) usually contributes most of the loan amount (>= 80%), while the NBFC (Originator) chips in with the rest. This setup helps get loans to more people, especially those who might not have easy access to credit.</p>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="./images/yubi-model.png">
+            </div>
+          </div>
         </div>
       </section>
       <section class="case-details">
         <div class="container">
-          <h2 class="section-title">Solution</h2>
-          <p class="case-details-para">An enhanced digital and responsive ecosystem that provides a satisfying user experience based on the aspects such as:</p>
+          <h2 class="section-title">Challenge</h2>
+          <p class="case-details-para">In a typical co-lending platform, each product (group of loans) typically has only one investor. However, this can create challenges when multiple investors want to invest in loans from the same ‘product’, or when originators have many loans to co-lend. </p>
+          <p class="case-details-para">To address this, some systems duplicate products to set up separate agreements, but this can lead to confusion and redundancy. In such cases, originators must manually decide which loans go to which investors, which can increase rejection rates if the matching criteria aren’t met. </p>
+          <p class="case-details-para"><b>Note:</b> Yubi Co.lend is a large platform where I worked for an year. However, this case study will focus only on the ‘Loan Allocation AI’ feature, which lasted for two months</p>
+        </div>
+      </section>
+      <section class="case-details">
+        <div class="container">
+          <h2 class="section-title">Goals</h2>
           <ul>
-            <li>Simple patient dashboard management system.</li>
-            <li>Al powered alerts proactively given to nurses for risk patients to save.</li>
-            <li>Connects patient vitals in real-time from the hospital beds.</li>
+            <li>Reduce rejection rate by allocating the right loans to investors</li>
+            <li>Give more reach to the investors as per their lending appetite</li>
+            <li>More options of co lending partners in case of originators with large book of loans</li>
           </ul>
+          <img class="img-fluid mt-4" src="./images/yubi-goals.png">
         </div>
       </section>
       <section class="case-details">
         <div class="container">
           <h2 class="section-title">Approach</h2>
-          <p class="case-details-para mb-0"><b>Personas & Customer Journey</b></p>
-          <p class="case-details-para">Patients' dashboard is basically accessible to the hierarchy of the workers which is concise to Brooklyn
-            Hospital Centre. Nurses, doctors, healthcare staff, all are assigned to the managerial dashboard to
-            administer patients' vitals and act accordingly.</p>
-          <img class="img-fluid mt-4" src="./images/brooklyn-approach.png">
+          <p class="case-details-para mb-0"><b>Understanding Loan Allocation Model</b></p>
+          <ul>
+            <li><b>Loan Scoring:</b> Pending loan applications are scored against all investors to predict acceptance or rejection. Historical patterns inform this prediction.</li>
+            <li><b>Batch Scoring:</b> Borrowers are scored against investors in batches and stored in a database.</li>
+            <li><b>Batch Updates:</b> When borrower values change (e.g., new loans or defaults), the model reevaluates and updates the database.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="case-details">
+        <div class="container">
+          <p class="case-details-para mb-0"><b>User Stories</b></p>
+          <img class="img-fluid mt-4" src="./images/yubi-user-story.png">
         </div>
       </section>
       <section class="case-details">
         <div class="container">
           <p class="case-details-para mb-0"><b>IA</b></p>
           <p class="case-details-para">Starting from basic features to complex ones, IA was prepared based on technical feasibility.</p>
-          <img class="img-fluid mt-4" src="./images/brooklyn-ia.png">
+          <img class="img-fluid mt-4" src="./images/yubi-ia.png">
         </div>
       </section>
       <section class="case-details">
         <div class="container">
-          <p class="case-details-para mb-0"><b>Wireframes</b></p>
-          <img class="img-fluid mt-4" src="./images/brooklyn-wireframe.png">
+          <p class="case-details-para"><b>Media Coverage</b></p>
+          <img class="img-fluid mt-4" src="./images/yubi-media.png">
         </div>
       </section>
       <section class="case-details">
         <div class="container">
-          <p class="case-details-para mb-0"><b>Design Decisions</b></p>
-          <p class="case-details-para">The colors and fonts are selected based on healthcare industry trends. Relevant illustrations and Venn diagrams are used to depict the data as clearly as possible</p>
-          <img class="img-fluid mt-4" src="./images/brookly-design-discussion.png">
-        </div>
-      </section>
-      <section class="case-details">
-        <div class="container">
-          <h2 class="section-title">Result</h2>
-          <p class="case-details-para">Backend and AI engineers began developing algorithms based on the UX design. Minor adjustments were made due to technical feasibility, and the team proceeded with the testing phase.</p>
-          <div class="row">
-            <div class="col-md-6">
-              <img class="img-fluid" src="./images/brooklyn-result-1.png">
-            </div>
-            <div class="col-md-6">
-              <img class="img-fluid" src="./images/brooklyn-result-2.png">
-            </div>
-            <div class="col-md-6">
-              <img class="img-fluid" src="./images/brooklyn-result-3.png">
-            </div>
-            <div class="col-md-6">
-              <img class="img-fluid" src="./images/brooklyn-result-4.png">
-            </div>
-          </div>
+          <h2 class="section-title">Results</h2>
+          <img class="img-fluid mt-4" src="./images/yubi-result.png">
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container">
+        <h2 class="section-title">Collaborators</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="collabrators-list">
+              <div class="left">
+                <img class="img-fluid" src="./images/pooja.png" alt="pooja">
+              </div>
+              <div class="right">
+                <p class="name">Pooja Jaiswal</p>
+                <p class="designation">Senior Product Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
