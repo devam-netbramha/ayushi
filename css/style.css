@@ -166,7 +166,7 @@ body {
 }
 @media (max-width: 768px) {
   .projects-card {
-    padding: 32px;
+    padding: 32px 32px 0;
   }
 }
 .projects-card:not(:last-child) {
@@ -189,7 +189,6 @@ body {
   .projects-card-title {
     font-size: 28px;
     line-height: 32px;
-    margin-top: 24px;
   }
 }
 .projects-card-desc {
@@ -214,7 +213,7 @@ body {
 }
 @media (max-width: 768px) {
   .projects-card-detail {
-    padding-bottom: 0;
+    padding-bottom: 32px;
   }
 }
 .projects-card-image img.imgShadow {
@@ -354,6 +353,17 @@ footer {
   font-weight: 600;
   line-height: 36px;
   margin-bottom: 8px;
+  text-decoration: none;
+  position: relative;
+}
+.collabrators-list .right .name:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  border: 1px dotted #2d2d2d;
 }
 @media (max-width: 768px) {
   .collabrators-list .right .name {
@@ -434,6 +444,9 @@ header {
   .navbar .nav-link:after {
     display: none;
   }
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent;
 }
 
 .about {
@@ -554,6 +567,11 @@ header {
 }
 .case-banner-summary:not(:last-child) {
   margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .case-banner-summary:last-child {
+    margin-bottom: 40px;
+  }
 }
 .case-banner-item {
   max-width: 50%;

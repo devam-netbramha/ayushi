@@ -9,7 +9,8 @@ window.onscroll = function() {
 
   /* if scrolling down, let it scroll out of view as normal */
   if (prevScrollpos <= currentScrollPos ){
-      headerDiv.style.top ="-100%";
+    headerDiv.style.top = "-100%";
+    $('.navbar-collapse').removeClass('show')
   }
   /* otherwise if we're scrolling up, fix the nav to the top */
   else{
